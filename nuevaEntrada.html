@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nueva entrada</title>
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/mdb/css/mdb.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="image/velez-logo.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <script src="vendors/jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body>
+    <!--Navbar -->
+    <nav
+      class="mb-1 navbar navbar-expand-xl navbar-dark bg-dark sticky-top p-4 mb-3"
+    >
+      <div class="mr-5">
+        <a class="logo" href="index.html"><img class="logo" width="80px" src="image/velez-logo.png" /></a>
+      </div>
+      <div class="mr-5">
+        <div class="row text-white">IES Luis Vélez de Guevara</div>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent-333"
+        aria-controls="navbarSupportedContent-333"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse mt-4 mt-xl-0"
+        id="navbarSupportedContent-333"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Inicio
+              <span class="sr-only"></span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="actualidad.html">Actualidad</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="deptos.html">Departamentos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="quejas-sugerencias.html">Quejas y sugerencias</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container p-xl-5">
+      <div id="contenido" class="col-12 col-md-12 col-lg-12 col-xl-12 p-12">
+        <form
+          id="formulario"
+          class="needs-validation"
+          novalidate
+          action="php/crearEntrada.php"
+          method="post"
+          name="formulario"
+          enctype="multipart/form-data"
+        >
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="titulo">Título</label>
+              <input
+                id="titulo"
+                name="titulo"
+                class="form-control"
+                required
+                type="text"
+                placeholder="Ej: Nueva Entrada"
+              />
+              <div class="valid-feedback">¡OK!</div>
+              <div class="invalid-feedback">Debes introducir un título</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="cuerpo">Cuerpo</label>
+              <textarea
+                id="cuerpo"
+                name="cuerpo"
+                class="form-control"
+                rows="10"
+                required
+                placeholder="Introduce un cuerpo"
+              ></textarea>
+              <div class="valid-feedback">¡OK!</div>
+              <div class="invalid-feedback">Debes introducir un cuerpo</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="image">Subir imagen de portada</label>
+              <input
+                type="file"
+                class="form-control-file"
+                name="image"
+                id="image"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+              <input
+                id="enviar"
+                class="btn btn-primary upload boton-azul"
+                type="submit"
+                value="Enviar"
+              />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small black fixed">
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright
+        <a href="#top">IES Luis Vélez de Guevara</a>
+      </div>
+    </footer>
+
+    <script src="js/all.js"></script>
+    <script src="vendors/bootstrap.min.js"></script>
+    <script src="vendors/mdb/js/mdb.min.js"></script>
+    <script src="vendors/popper.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".upload").on('click', function() {
+            var formData = new FormData();
+            var files = $('#image')[0].files[0];
+            formData.append('file',files);
+            $.ajax({
+                url: 'subirImagen.php',
+                type: 'post',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(response) {
+                    if (response != 0) {
+                      alert('Formato de imagen incorrecto (Solo se admite PNG y GIF).');
+                    } else {
+                      $("#formulario").submit();
+                    } 
+                }
+            });
+            return false;
+        });
+    });
+    </script>
+  </body>
+</html>

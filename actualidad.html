@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Actualidad</title>
+  <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="vendors/mdb/css/mdb.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/all.css" />
+  <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="image/velez-logo.png" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <script src="vendors/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <!--Navbar -->
+  <nav class="mb-1 navbar navbar-expand-xl navbar-dark bg-dark sticky-top p-4 mb-3">
+    <div class="mr-5">
+      <a class="logo" href="index.html"><img class="logo" width="80px" src="image/velez-logo.png" /></a>
+    </div>
+    <div class="mr-5">
+      <div class="row text-white">IES Luis Vélez de Guevara</div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-4 mt-xl-0" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio
+            <span class="sr-only"></span>
+          </a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="actualidad.html">Actualidad</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="deptos.html">Departamentos</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fq.html">F&Q</a>
+        </li>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="mt-3 mb-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Actualidad</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-12 col-xl-12 p-12">
+      <div id="contenido"></div>
+      <button type="button" onclick="window.location.href='nuevaEntrada.html'"
+        class="mb-5 mb-lg-3 btn btn-primary boton-azul">+ Nueva entrada</button>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small black fixed">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright
+      <a href="#top">IES Luis Vélez de Guevara</a>
+    </div>
+  </footer>
+
+
+  <script src="js/all.js"></script>
+  <script src="vendors/bootstrap.min.js"></script>
+  <script src="vendors/mdb/js/mdb.min.js"></script>
+  <script src="vendors/popper.min.js"></script>
+  <script src="js/login.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        type: 'POST',
+        url: 'php/obtenerEntradas.php',
+        dataType: "json",
+        success: function (json) {
+          if (json.length == 0) {
+            $('#contenido').append("<h2>No hay entradas</h2>");
+          } else {
+            for (var i = 0; json.length; i++) {
+              $('#contenido').append("<div class=\"card ml-xl-5 mr-xl-5 mb-5 entrada\"><img id=\"img_entrada\" src=\"" + json[i].imagen + "\" class=\"card-img-top\"><div class=\"card-body\"><h5 id=\"titulo\" class=\"card-title\">" + json[i].titulo + "</h5><p id=\"cuerpo\" class=\"card-text\">" + json[i].cuerpo + "</p><p class=\"card-text\"><small class=\"text-muted\">Fecha de publicación: " + json[i].fecha + "</small></p></div></div>");
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,97 @@
+{
+  "draw": 1,
+  "recordsTotal": 10,
+  "recordsFiltered": 10,
+  "data": [
+    {
+      "DT_RowId": "row_5",
+      "first_name": "Daenerys",
+      "last_name": "Targaryen",
+      "position": "Señora de los Siete Reinos y Protectora del Reino, entre otros tantos",
+      "where": "Roca Dragón",
+      "hobs": "Acumular titulos y quemar Lannister's",
+      "state": "En juego"
+    },
+    {
+      "DT_RowId": "row_25",
+      "first_name": "Jon",
+      "last_name": "Nieve",
+      "position": "El rey en el norte",
+      "where": "Invernalia",
+      "hobs": "Morir, resucitar y acomodarse con salvajes",
+      "state": "Zombie?"
+    },
+    {
+      "DT_RowId": "row_3",
+      "first_name": "Gregor",
+      "last_name": "Clegane",
+      "position": "La montaña",
+      "where": "Desembarco del rey",
+      "hobs": "Cirugia ocular",
+      "state": "No-muerto y muerto"
+    },
+    {
+      "DT_RowId": "row_19",
+      "first_name": "Cersei",
+      "last_name": "Lannister",
+      "position": "Reina madre",
+      "where": "Desembarco del rey",
+      "hobs": "El fuego valirio y el incesto",
+      "state": "Aplastada"
+    },
+    {
+      "DT_RowId": "row_28",
+      "first_name": "Khal",
+      "last_name": "Drogo",
+      "position": "The Boss",
+      "where": "Vaes Dothrak",
+      "hobs": "Montador",
+      "state": "Muerto"
+    },
+    {
+      "DT_RowId": "row_6",
+      "first_name": "Sansa",
+      "last_name": "Stark",
+      "position": "Ninguno",
+      "where": "Invernalia",
+      "hobs": "Liarla en todo momento",
+      "state": "En juego"
+    },
+    {
+      "DT_RowId": "row_43",
+      "first_name": "Tyrion",
+      "last_name": "Lannister",
+      "position": "Consejero de la madre de dragones",
+      "where": "Roca Dragón",
+      "hobs": "Bebida básicamente",
+      "state": "En juego"
+    },
+    {
+      "DT_RowId": "row_23",
+      "first_name": "Arya",
+      "last_name": "Stark",
+      "position": "Asesina sin rostro",
+      "where": "???",
+      "hobs": "Venganza",
+      "state": "En juego"
+    },
+    {
+      "DT_RowId": "row_51",
+      "first_name": "Joffrey",
+      "last_name": "Baratheon (o Lannister)",
+      "position": "Rey de los siete reinos",
+      "where": "Desembarco del rey",
+      "hobs": "Catador de vinos rurales",
+      "state": "Muerto"
+    },
+    {
+      "DT_RowId": "row_4",
+      "first_name": "Sandor",
+      "last_name": "Clegane",
+      "position": "El perro",
+      "where": "Desembarco del Rey",
+      "hobs": "Jugar con fuego",
+      "state": "Muerto"
+    }
+  ]
+}

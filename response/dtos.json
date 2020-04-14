@@ -1,0 +1,215 @@
+{
+  "draw": 10,
+  "recordsTotal": 10,
+  "recordsFiltered": 10,
+  "data": [
+    {
+      "nombreDepartamento": "area Social-Lingüistica",
+      "profesor1": "Izquierdo Sanchez, Eva Maria",
+      "profesor2": "Fernandez Gonzalez, Julian",
+      "profesor3": "Aguilar Garcia, Julia",
+      "profesor4": "Garcia Chavero, Maria Jesús",
+      "contacto1": "social@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "area Cientifico tecnologica",
+      "profesor1": "Rabaneda Fernandez, Purificacion",
+      "profesor2": "Menchon Dominguez, Francisco Javier",
+      "profesor3": "Molina Piñar, Providencia",
+      "profesor4": "Parejo Navarro, Francisco Javier",
+      "contacto1": "tecnologia@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "area Artistica",
+      "profesor1": "Perez Zurita, Antonio David",
+      "profesor2": "Viola Nevado, Jose Enrique",
+      "profesor3": "Fuente Cañete, Monica de la",
+      "profesor4": "Garcia Barrera, Maria Inmaculada",
+      "contacto1": "arte@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "area Formacion Profesional ",
+      "profesor1": "Garcia Sanchez, Tatiana",
+      "profesor2": "Navas Malagon, Lourdes",
+      "profesor3": "Sanchez Gomez, Elisa",
+      "profesor4": "Armenteros Nuñez, Cristina",
+      "contacto1": "fp@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento De Orientacion",
+      "profesor1": "Cabral Martin, Dolores",
+      "profesor2": "Montero Martin, Antonia",
+      "profesor3": "Perez Pareja, Jose Pablo",
+      "profesor4": "Ramos Rojas, Ines Maria",
+      "contacto1": "orientacion@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento Religion",
+      "profesor1": "Rodriguez Lobo, Maria Candelaria",
+      "profesor2": "Chia Diaz, Olivia",
+      "profesor3": "Mediavilla Molina, Ana ",
+      "profesor4": "Obregon Rojano, Francisco",
+      "contacto1": "religioncatolica@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento Filosofia",
+      "profesor1": "Atanasio Utrero, Cristina",
+      "profesor2": "Costarrosa Morales, Laureano",
+      "profesor3": "Martinez Vijuesca, Francisco",
+      "profesor4": "Chia Diaz, Olivia"    ,
+      "contacto1": "filosofia@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento de Frances",
+      "profesor1": "Alcantarilla Rodriguez, Miriam",
+      "profesor2": "Graciano Arroyo, Maria Dolores",
+      "profesor3": "Hans Uber, Maria Belen",
+      "profesor4": "Merida Garcia, Isabel Maria",
+      "contacto1": "frances@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento de Geografia e Historia",
+      "profesor1": "Alcantarilla Rodriguez, Miriam",
+      "profesor2": "Graciano Arroyo, Maria Dolores",
+      "profesor3": "Hans Uber, Maria Belen",
+      "profesor4": "Merida Garcia, Isabel Maria",
+      "contacto1": "historia@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento Ingles",
+      "profesor1": "Porras Macias, Maria del Carmen ",
+      "profesor2": "Saez Ferrero, Fernando",
+      "profesor3": "Antonio Jose Barrios Marin",
+      "profesor4": "Tripiana Ortiz, Teodoro",
+      "contacto1": "ingles@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento Lengua",
+      "profesor1": "Cruz Muñoz, Mateo Jesús",
+      "profesor2": "Merida alvarez, Felipe Manuel",
+      "profesor3": "Gomez Priego, Maria de los Dolores",
+      "profesor4": "Rojas alvarez, Rafael Amadeo ",
+      "contacto1": "lengua@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento De Biologia y Geologia",
+      "profesor1": "Carmona Luque, Juan",
+      "profesor2": "Garcia Alcantara, Isabel Maria",
+      "profesor3": "Carrasco Fernandez, Carmen Maria",
+      "profesor4": "Bello Cañete, Andres",
+      "contacto1": "biologia@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento de Fisica y Quimica",
+      "profesor1": "Diaz Ramirez, Aurelia",
+      "profesor2": "Dominguez Muñoz, Rafaela",
+      "profesor3": "Angulo Jimenez, Luis",
+      "profesor4": "Matias Romero, Rosendo",
+      "contacto1": "fyq@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento de Matematicas",
+      "profesor1": "Sanchez Rodriguez, Maria Asuncion",
+      "profesor2": "Arroyo Jaraba, Manuel ",
+      "profesor3": "Moral Ruiz, Francisco del",
+      "profesor4": "Jimenez Jimenez, Maria Josefa",
+      "contacto1": "mates@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento de Tecnologia",
+      "profesor1": "Martinez Capin, Francisco Javier",
+      "profesor2": "Palomares Merino, Francisco",
+      "profesor3": "Aguilar Curado, Jose Antonio",
+      "profesor4": "Farfan Espuny, Juan Enrique",
+      "contacto1": "tecnologia@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento de Dibujo",
+      "profesor1": "Fernandez Chirino, Elena",
+      "profesor2": "Gutierrez Porras, Coral",
+      "profesor3": "Martin Martin, Francisco Eduardo",
+      "profesor4": "Martin Perales, David",
+      "contacto1": "dibujo@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento de Educacion fisica",
+      "profesor1": "Negro Lozano, Antonio Jose",
+      "profesor2": "Toledo Martinez, Jose Manuel",
+      "profesor3": "Caravaca Bustos, Mª del Carmen",
+      "profesor4": "Antonio Jose Barrios Marin",
+      "contacto1": "educacionfisica@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento Música",
+      "profesor1": "Fernandez Chirino, Elena",
+      "profesor2": "Toledo Martinez, Jose Manuel",
+      "profesor3": "Antonio Jose Barrios Marin",
+      "profesor4": "Caravaca Bustos, Mª del Carmen",
+      "contacto1": "musica@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento Administrativo",
+      "profesor1": "Corts Tormo, Maria Salud",
+      "profesor2": "Muñoz Fontanilla, Susana",
+      "profesor3": "Campos Huedo, J. Manuel ",
+      "profesor4": "Castilla Serrano, Fernando",
+      "contacto1": "administrativo@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento Economia-FOL",
+      "profesor1": "Losada Chambra, Antonia",
+      "profesor2": "Luque Baños, Marcelina de",
+      "profesor3": "Sanchez Megolla, Andrea ",
+      "profesor4": "Gonzalez Arias, Amadeo Jesús",
+      "contacto1": "economia-fol@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento Informatica y Comunicaciones",
+      "profesor1": "Morales Delgado, Maria Soledad",
+      "profesor2": "Muñoz Jimenez, Jose Antonio",
+      "profesor3": "Jimenez Vilchez, Alfonso",
+      "profesor4": "Antonio Jose Barrios Marin",
+      "contacto1": "informatica@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento Servicios Socioculturales y a la Comunidad",
+      "profesor1": "Garcia Chavero, Maria Jesús",
+      "profesor2": "Rabaneda Fernandez, Purificacion",
+      "profesor3": "Parejo Navarro, Francisco Javier",
+      "profesor4": "Rafael Ramos Duran",
+      "contacto1": "soociocultural@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    },
+    {
+      "nombreDepartamento": "Departamento de CulturaClasica",
+      "profesor1": "Ivan Del Rio Ruger",
+      "profesor2": "Francisco de Asis Lopez Chaparro",
+      "profesor3": "Javier Cordobes Carmona",
+      "profesor4": "Juan Bautista Chaves",
+      "contacto1": "culturaclasica@iesluisvelez.com",
+      "contacto2": "955 87 99 18"
+    }
+    
+  ]
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quejas y Sugerencias</title>
+  <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="vendors/mdb/css/mdb.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/all.css" />
+  <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="image/velez-logo.png" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <script src="vendors/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <!--Navbar -->
+  <nav class="mb-1 navbar navbar-expand-xl navbar-dark bg-dark sticky-top p-4 mb-3">
+    <div class="mr-5">
+      <a class="logo" href="index.html"><img class="logo" width="80px" src="image/velez-logo.png" /></a>
+    </div>
+    <div class="mr-5">
+      <div class="row text-white">IES Luis Vélez de Guevara</div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-4 mt-xl-0" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio
+            <span class="sr-only"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="actualidad.html">Actualidad</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="deptos.html">Departamentos</a>
+
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="fq.html">F&Q</a>
+        </li>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="mt-3 mb-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="mt-3 mb-3">
+          <h3>Preguntas Frecuentes</h3>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="search mt-3 mb-3">
+          <input type="text" id="busqueda" placeholder="Buscar ..." class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="panel-group" id="accordion">
+      <div class="faqHeader">IES Luís Vélez de Guevara</div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseOne">¿Cómo permitir que los usuarios se matriculen en tu curso?</a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <p>Si quieres que los alumnos se puedan automatricular deberás activar la opción en cada curso:
+              Administración->Administración del curso->Usuarios->Métodos de matriculación-> Auto-matriculación
+              (Estudiante). Desde aquí podrás asignar una clave de matriculación, para evitar que cualquiera pueda
+              matricularse en tus cursos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseTen">¿Cómo se puede enviar un mensaje a un alumno o a un grupo de alumnos?</a>
+          </h4>
+        </div>
+        <div id="collapseTen" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Desde la opción de participantes del curso se pueden seleccionar a los alumnos a los que enviar un
+              mensaje.Una vez seleccionados, en el desplegable «Con los usuarios seleccionados…» que encontraremos en la
+              parte inferior de la ventana seleccionaremos la opción de «Agregar/enviar mensaje».</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseEleven">¿Cómo restaurar un bloque de contenidos (de la sección de Descargas) en un curso
+              Moodle?</a>
+          </h4>
+        </div>
+        <div id="collapseEleven" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Todos los bloques están diseñdos para que se restauren en el primer tema del curso y sólo copian las
+              actividades en ese bloque.
+
+              Cuando se restauran hay que tener cuidado y decir en Restaurar a: «Curso existente añadiéndole datos«.
+              Antes de hacer este paso tendremos que añadir un nuevo tema desde la configuración del curso (diciendo que
+              tiene un tema más).
+
+              Después activamos el modo edición del curso y con las flechas movemos el bloque vacío a la primera
+              posición (igual que movemos las actividades). Así­, cuando se restaure el bloque lo haría en el primer
+              tema que ahora sería el vacío.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+              href="#collapse12">¿Cómo reiniciar o resetear un curso para usarlo el año siguiente?
+            </a>
+          </h4>
+        </div>
+        <div id="collapse12" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Si quieres limpiar el curso de participantes y trabajos presentados debes usar la opción «Reiniciar» que
+              aparece en el propio curso. En concreto se encuentra en el panel de la izquierda llamado «Administración».
+            </p>
+          </div>
+        </div>
+      </div>
+      &nbsp;
+      <div class="faqHeader">Errores</div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Me
+              he dado de alta en su plataforma pero no me llega el correo de confirmación
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Muchas veces su gestor de correo envía a la bandeja de SPAM, o bandeja de correo no deseado, este tipo de
+              correos. Acceda a dicha bandeja y marque el correo como «Válido» o «No es spam».
+
+              Esto también puede suceder cuando solicita recordar la clave de acceso.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseThree">Estoy registrado en la plataforma como invitado pero no puedo acceder a los
+              cuestionarios de los distintos cursos
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Los cuestionarios no se pueden acceder siendo invitado, para utilizarlos hay que ser usuario registrado y
+              estar matriculado en el curso correspondiente.
+
+              Si quieres tener acceso a los mismos puedes descargarte el curso completo y restaurarlo en tu propio
+              Moodle para tener acceso total, o dar de alta tu centro en nuestra plataforma.</p>
+          </div>
+        </div>
+      </div>
+      &nbsp;
+      <div class="faqHeader">Otras preguntas</div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseFour">¿Cómo mover un bloque a la primera posición?
+            </a>
+          </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Para ordenar los bloques dentro de los cursos no se puede hacer uso de las características avanzadas de
+              AJAX y Javascript (no aparece el icono de mover). Puedes desactivarlas y después volverlas a activar
+              cuando quieras siguiendo el siguiente proceso:
+
+              Pincha en tu perfil (sobre tu nombre).
+              Accede a la pestaña «Editar información».
+              En la entrada llamada «AJAX y Javascript» selecciona «No: usar características web básicas».
+              Así te aparecerán las flechas en los distintos bloques para poder cambiar su orden.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default mb-5">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle collapsed blue-text" data-toggle="collapse" data-parent="#accordion"
+              href="#collapseSeven">¿Cómo puedo iniciar un trámite electrónico?</a>
+          </h4>
+        </div>
+        <div id="collapseSeven" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p> Desde el catálogo de trámites, una vez que hemos seleccionado el procedimiento que queremos
+              iniciar, hay que acceder a tramitación electrónica y seguir los pasos del asistente de
+              acceso
+              con certificado digital.
+
+              Una vez que hayamos confirmado los datos del interesado, de la solicitud y en su caso se
+              haya
+              adjuntado la documentación necesaria, se generará un acuse de recibo que permitirá acreditar
+              legalmente el contenido presentado y los datos de la anotación del Registro (fecha y hora
+              oficial de la presentación).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Footer -->
+  <footer class="page-footer font-small black fixed">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright
+      <a href="#top">IES Luis Vélez de Guevara</a>
+    </div>
+  </footer>
+  <script src="js/all.js"></script>
+  <script src="js/filtro.js"></script>
+  <script src="vendors/bootstrap.min.js"></script>
+  <script src="vendors/mdb/js/mdb.min.js"></script>
+  <script src="vendors/popper.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+
+</html>
